@@ -7,7 +7,6 @@ import {
 } from "@/types/task.types";
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-// Define the API service
 export const taskApi = createApi({
   reducerPath: "api",
   baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_URL }),
@@ -41,7 +40,6 @@ export const taskApi = createApi({
   }),
 });
 
-// Export hooks for the endpoints
 export const {
   useAddTaskMutation,
   useLazyGetTasksQuery,
